@@ -1,0 +1,39 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+  height: 50px !important;
+}
+
+.insert-form,.update-form, .delete-form, .conformUpdate-form, .conformDelete-form, .search-form{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    background-color: antiquewhite;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.add-book-form{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 115px;
+
+}
