@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../images/Assets/bgimg.webp) no-repeat center center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    width: 420px;
+    background: transparent;
+    color: rgb(230, 230, 230);
+    border-radius: 20px;
+    padding: 30px;
+    border: 1px solid rgb(225, 225, 225, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px;
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 1px solid rgb(225, 225, 225, .2);
+    border-radius: 100px;
+    padding-left: 20px;
+    color: rgb(230, 230, 230);
+}
+
+input::placeholder {
+    color: rgb(230, 230, 230);
+}
+
+#pw {
+    margin-left: auto;
+    text-decoration: none;
+    color: rgb(230, 230, 230);
+}
+
+#pw:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 100px;
+    font-weight: 550;
+    font-size: larger
+}
+
+.register {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#reg {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+
+}
+
+#reg:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: rgb(230, 230, 230);
+}
+
+input[type="checkbox"] {
+    accent-color: rgb(144, 72, 4);
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.msg{
+    font-size: 12px;
+    margin: 5px 20px 15px 20px;
+    display: block;
+    color: #ddd;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 20px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        margin-bottom: 35px;
+    }
+
+    .msg {
+        font-size: 11px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .remember-me {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .submit {
+        font-size: 15px;
+    }
+}

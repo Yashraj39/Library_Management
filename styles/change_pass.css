@@ -1,0 +1,35 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 750px;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo{
+  height: 50px !important;
+}
+
+.insert-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: antiquewhite;
+  padding: 40px;
+  border-radius: 20px;
+  width: 500px;
+  margin: 40px !important;
+}
