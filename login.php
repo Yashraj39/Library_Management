@@ -6,12 +6,12 @@
     if($_SERVER['REQUEST_METHOD']==="POST"){
 
         $username = $_POST['username'];
-        $password = $_POST['password'];
+        $password = md5($_POST['password']);
 
         $sql = "SELECT * FROM `library`.`register` WHERE `username`='$username' AND `password`='$password' ";
         $res = $conn->query($sql);
 
-        if($res && $res->num_rows===1){
+        if($res && $res->num_rows==1){
             $_SESSION['loggedin'] = true;
             $_SESSION['username'] = $username;
             echo "<script>alert('login successfull'); window.location.href='client_pages/home.php'</script>";

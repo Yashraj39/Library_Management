@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($checkeExistance && $checkeExistance->num_rows === 1) {
         echo "<script>alert('user already exists');</script>";
     } else {
-        $password = $_POST['password'];
-        $confirmPassword = $_POST['confirm-password'];
+        $password = md5($_POST['password']);
+        $confirmPassword = md5($_POST['confirm-password']);
 
         if ($password != $confirmPassword) {
             echo "<script>alert('password did not matched');</script>";
         } else if ($checkedUser && $checkedUser->num_rows === 1) {
-            $sql = "INSERT INTO `register`(`username`, `sid`, `password`, `confirm_password`) VALUES ('$username','$sid','$password','$confirmPassword')";
+            $sql = "INSERT INTO `register`(`username`, `sid`, `password`) VALUES ('$username','$sid','$password')";
             if ($conn->query($sql)) {
                 echo "<script>alert('Registered successfully'); window.location.href='login.php';</script>";
             } else {
