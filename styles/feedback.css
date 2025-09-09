@@ -1,0 +1,35 @@
+.feedback-form{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    margin: 50px;
+    gap: 50px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+
+.feedback-form img{
+    width: 50vw;
+    border-radius: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media(max-width:1150px){
+
+    .feedback-form, .feedimg{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feedback-form img{
+        width: 100%;
+    }
+
+}

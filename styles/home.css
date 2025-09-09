@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.space {
+  height: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  z-index: 100;
+}
+
+.logo {
+  height: 50px !important;
+}
+
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+  justify-content: space-between;
+}
+
+.button {
+  position: fixed;
+  right: 2%;
+  top: 14%;
+  width: 20%;
+  min-width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: gray;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.button button {
+  text-align: center;
+  margin-bottom: 50px !important;
+}
+
+.table {
+  width: 100%;
+}
+
+.insert-form,
+.update-form,
+.delete-form,
+.conformUpdate-form,
+.conformDelete-form,
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  width: 80%;
+  margin-left: 10%;
+
+  background-color: antiquewhite;
+  padding: 40px;
+  border-radius: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+  .insert-form,
+  .update-form,
+  .delete-form,
+  .conformUpdate-form,
+  .conformDelete-form,
+  .search-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

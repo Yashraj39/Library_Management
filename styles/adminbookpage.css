@@ -1,0 +1,86 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    height: 50px !important;
+}
+
+.space {
+    height: 100px !important;
+}
+
+.book-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-detail-container {
+    background-color: antiquewhite;
+    max-width: 1200px;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.book-detail-card {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.show-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.book-detail-img img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .show-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .book-detail-container{
+        margin-top: 10px;
+    }
+
+    .book-detail-card{
+        flex-direction: column;
+    }
+
+    .book-detail-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+}
