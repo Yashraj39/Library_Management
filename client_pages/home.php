@@ -26,7 +26,7 @@ if ($method == 'search') {
         $search_res = $conn->query($sql);
         $search = true;
     } else {
-        echo "<script>alert('Enter book title!'); window.location.href='admin_update_books.php';</script>";
+        echo "<script>alert('Enter book title!'); window.location.href='home.php';</script>";
         exit;
     }
 }
@@ -91,7 +91,6 @@ if ($method == 'search') {
                         </ul>
                     </li>
                 </ul>
-
             </div>
 
         </div>

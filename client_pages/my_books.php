@@ -75,7 +75,10 @@ if ($res_book_issued && $res_book_issued->num_rows == 1) {
                 </ul>
 
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown" style="display:flex;color:white;white-space:nowrap;">
+                        <ul style="display:flex;justify-content:center;align-items:center;padding-right:10px;">
+                            <?php echo $_SESSION['username'] ?>
+                        </ul>
                         <a class="nav-link" role="button" data-bs-toggle="dropdown">
                             <img src="../images/Assets/settings_logo.png" alt="Settings" style="height: 24px;">
                         </a>
