@@ -70,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item" href="client_logout.php">logout</a></li>
-                            <li><a class="dropdown-item" href="admin_change_password.php">change password</a></li>
+                            <li><a class="dropdown-item" href="user_change_password.php">change password</a></li>
                         </ul>
                     </li>
                 </ul>

@@ -102,7 +102,7 @@ if ($method == 'search') {
         <input type="hidden" name="method" value="search">
         <input class="form-control" name="title" id="title" type="text" placeholder="Enter Book Title">
         <button class="btn btn-primary" type="submit"><img src="../images/Assets/magnifying-glass.png"
-                style="height:20px;" alt="search"></button>
+        style="height:20px;" alt="search"></button>
     </form>
 
     <?php
