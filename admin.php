@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
                 <input type="text" name="username" placeholder="Username" required>
             </div>
             <div class="input-box">
-                <input type="password" name="password" placeholder="Password" minlength="8" maxlength="8" required>
+                <input type="password" name="password" placeholder="Password" minlength="6" maxlength="6" required>
             </div>
 
             <div class="remember-me">
