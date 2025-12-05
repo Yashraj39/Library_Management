@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     $title = $_POST['title'];
     $username = $_POST['username'];
-    $issue_date = $_POST['issue_date'];
+    $issue_date = date('Y-m-d');
     $return_date = date('Y-m-d', strtotime($issue_date . ' +30 days'));
 
     $get_book = "SELECT * FROM `library`.`book_details` WHERE `title`='$title'";
@@ -136,10 +136,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h5>Assign Book</h5>
             <input class="form-control" name="username" type="text" placeholder="Student Name : " required>
             <input class="form-control" name="title" type="text" placeholder="Book Title : " required>
-            <div class="form-group-row">
-                <label for="issue_date">Issue Date:</label>
-                <input class="form-control" name="issue_date" type="date" required>
-            </div>
             <button type="submit" class="btn btn-success">assign</button>
         </form>
     </div>

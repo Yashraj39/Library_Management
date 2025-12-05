@@ -239,7 +239,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <form method="POST" class="conformUpdate-form" id="conformUpdate-form">
-        <h5>Conform Update Data</h5>
+        <h5>Confirm Update Data</h5>
         <input type="hidden" name="method" value="conformUpdate">
         <input class="form-control" name="sid" type="text" placeholder="Enter New SID:" minlength="8" maxlength="8">
         <input class="form-control" name="username" type="text" placeholder="Enter New Username:">
