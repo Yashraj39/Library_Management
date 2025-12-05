@@ -10,6 +10,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $issue_date = date('Y-m-d');
     $return_date = date('Y-m-d', strtotime($issue_date . ' +30 days'));
 
+    $user_exists = "SELECT * FROM `library`.`register` WHERE `username`='$username'";
+    $res_user_exists = $conn->query($user_exists);
+
+    if(!$res_user_exists || $res_user_exists->num_rows == 0) {
+        echo "<script>alert('User not registered');window.location.href='admin_issue_books.php';</script>";
+        exit;
+    }
+
     $get_book = "SELECT * FROM `library`.`book_details` WHERE `title`='$title'";
     $res_get_book = $conn->query($get_book);
 
